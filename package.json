@@ -5,7 +5,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build:app": "ng build --prod --aot=false --build-optimizer=true --app app --base-href /dist/app/",
+    "build:app2": "ng build --prod --aot --build-optimizer --app app2 --base-href /dist/app2/",
+    "build": "npm run build:app & npm run build:app2",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

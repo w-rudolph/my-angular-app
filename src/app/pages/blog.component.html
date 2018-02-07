@@ -1,0 +1,18 @@
+<div>
+  blog works!
+  <app-test-cmp>
+    <h3 #hh>Hello World</h3>
+  </app-test-cmp>
+  <hr>
+  <ng-container #ngContainer [ngTemplateOutlet]="ngTemplate"></ng-container>
+  <ng-container [ngTemplateOutlet]="ngTemplate"></ng-container>
+  <ng-container [ngTemplateOutlet]="ngTemplate"></ng-container>
+  <ng-template #ngTemplate>
+    <ul>
+      <li>AAAAAAA</li>
+      <li>BBBBBBB</li>
+      <li>CCCCCCC</li>
+      <li>DDDDDDD</li>
+    </ul>
+  </ng-template>
+</div>
